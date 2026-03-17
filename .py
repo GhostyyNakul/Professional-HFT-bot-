@@ -1,4 +1,3 @@
-Agent = '''
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -251,12 +250,4 @@ def run_live():
 
             print("Error:", e)
 
-        time.sleep(60)'''
-
-
-with open("agent.py", "w") as f:
-    f.write(AGENT.strip())
-
-print("agent.py saved.")
-print("Test it:")
-print("  API_URL=http://SERVER_IP:8001 TEAM_API_KEY=your_key python agent.py")
+        time.sleep(60)
